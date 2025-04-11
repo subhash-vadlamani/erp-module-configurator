@@ -1,0 +1,22 @@
+analyze_company:
+  agent_id: business_analyst
+  description: >
+    Analyze the provided company profile including industry, region, and employee count.
+    List the core business needs that the ERP should fulfill.
+  expected_output: >
+    A structured list of business needs (e.g., HR, Inventory, Payroll, Accounting, CRM, etc.)
+
+map_to_modules:
+  agent_id: erp_specialist
+  description: >
+    Based on the business needs provided by the Business Analyst,
+    recommend suitable ERP modules that should be included in the system setup.
+  expected_output: >
+    A list of recommended ERP modules with a short justification for each.
+
+validate_configuration:
+  agent_id: validator
+  description: >
+    Review the proposed ERP module list and validate for configuration errors, conflicts, or missing dependencies.
+  expected_output: >
+    Final validated module list with any warnings or required adjustments noted.

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "module_configurator"
+version = "0.1.0"
+description = ""
+authors = ["Subhash Vadlamani <vadlamanisubhash1998@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+crewai = {extras = ["tools"], version = "^0.85.0"}
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+module_configurator = "module_configurator.main:run"
+train = "module_configurator.main:train"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
